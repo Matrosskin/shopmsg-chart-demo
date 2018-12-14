@@ -2,6 +2,8 @@
 import * as React from 'react';
 import { Layout, Menu, Breadcrumb, Icon, Card } from 'antd';
 
+import { ReportWithChart } from './reports/report-with-chart';
+
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
 
@@ -62,7 +64,7 @@ export default class DashboardApp extends React.Component {
               <Breadcrumb.Item>Reports</Breadcrumb.Item>
               <Breadcrumb.Item>Message Receipts & Optins</Breadcrumb.Item>
             </Breadcrumb>
-            <Card>Put your component here</Card>
+            <ReportWithChart></ReportWithChart>
           </Content>
           <Footer style={{ textAlign: 'center' }}>ShopMessage ©2018</Footer>
         </Layout>

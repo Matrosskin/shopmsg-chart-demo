@@ -43,6 +43,8 @@ module.exports = function(config) {
    */
   function generateRandomValues(from, to, base, variation) {
     let result = [];
+    // QUESTION: Possibly it will be more clear to user if we return to him also the data for date "to".
+    // At the moment the data for date "to" is excluded? but the data for date "from" is included.
     while (from < to) {
       let randomV = Math.floor(variation * Math.random()) * (Math.random() >= 0.5 ? -1 : 1);
       result.push({
